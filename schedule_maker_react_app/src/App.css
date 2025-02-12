@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+table.calendar {
+    border: 1px solid black;
+}
+
+table.calendar thead tr td {
+    font-weight: bold;
+}
+
+table.calendar td {
+    border: 1px solid black;
+    min-width: 50px;
+    max-width: 250px;
+}
