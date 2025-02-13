@@ -4,17 +4,19 @@ This project uses React for front-end and Flask for backend.
 
 Requires python 3, npm, and yarn to be installed.
 
-In one terminal window, run the 
-> cd api
-> python3 -m venv venv
-> source venv/bin/activate
-> pip install -r requirements.txt
-> flask run
+In one terminal window, run the backend Flask server by doing this:
+
+* cd api
+* python3 -m venv venv
+* source venv/bin/activate
+* pip install -r requirements.txt
+* flask run
 
 In a second terminal window, run the front-end React by doing this:
-> yarn install
-> yarn build
-> yarn start
+
+* yarn install
+* yarn build
+* yarn start
 
 This will open your browser to the react app.
 
