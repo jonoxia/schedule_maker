@@ -1,28 +1,13 @@
 from .app import db
 
 """
-Scheduled events must have a name and a specific start time and duration.
-Scheduled events may occur once, or may repeat weekly at the same time on one or more specific
-days of the week as specified by the user. For example, a user may choose to schedule an event to
-occur at the same time every Monday and Wednesday.
-No more than one event may be scheduled to occur at a given day and time.
-The UI must be compatible with current browser versions of at least Chrome and Firefox.
-The UI must allow the user to view the set of previously scheduled events and to add a new event.
-The application must include a README with instructions for building and running the application
-We expect scheduled events to persist across browsers and sessions, but feel free to accomplish this
-in whatever way you think is best given the exercise constraints.
-There is no requirement for you to containerize your submission. However, you may optionally
-Dockerize your submission; please do not use any other containerization technology.
-Clearly state all of the assumptions you made in completing the application
-
-
-Assumption: 'no more than one event may be scheduled ot occur at a given day and time' means taht
+Assumption: 'no more than one event may be scheduled ot occur at a given day and time' means that
 we should not allow an event to be created if the event OR any of its repeats overlaps with any existing
 event OR any of that event's repeats.
 
-Assumption: We should track the time zone of the event start and end dates
-
+Assumption: We should track the time zone of the event start and end dates.
 """
+
 class User(db.Model):
     """
     """
